@@ -6,9 +6,9 @@ Comprehensive test case documentation for the Sauce Demo e-commerce application.
 
 This project provides a complete set of test cases for the Sauce Demo application (https://www.saucedemo.com/), a practice application designed for testing automation frameworks like Playwright, Selenium, and Cypress.
 
-**Total Test Cases:** 36  
+**Total Test Cases:** 37
 **Modules:** 4  
-**Status:** Active & Maintained
+**Status:** Passed, Failed & Skipped
 
 ## 📊 Test Coverage
 
@@ -21,7 +21,7 @@ This project provides a complete set of test cases for the Sauce Demo applicatio
 - Logout functionality
 
 **Priority:** High  
-**Status:** Active
+**Status:** Passed
 
 ### 2. Product Tests (11 test cases)
 - View product list and details
@@ -31,7 +31,7 @@ This project provides a complete set of test cases for the Sauce Demo applicatio
 - Product description visibility
 
 **Priority:** High/Medium  
-**Status:** Active/Skipped
+**Status:** Passed/Skipped
 
 ### 3. Cart Tests (9 test cases)
 - View empty and populated cart
@@ -44,7 +44,7 @@ This project provides a complete set of test cases for the Sauce Demo applicatio
 - Cart persistence after page refresh
 
 **Priority:** High/Medium  
-**Status:** Active
+**Status:** Passed
 
 ### 4. Checkout Tests (9 test cases)
 - Checkout page display
@@ -56,7 +56,7 @@ This project provides a complete set of test cases for the Sauce Demo applicatio
 - Navigation back to products
 
 **Priority:** High/Medium  
-**Status:** Active
+**Status:** Passed
 
 ## 📁 File Structure
 
@@ -77,7 +77,7 @@ Each test case includes:
 - **Test Steps:** Step-by-step instructions to execute the test
 - **Expected Result:** What should happen after executing the steps
 - **Priority:** High, Medium, or Low
-- **Status:** Active or Skipped
+- **Status:** Passed, Failed & Skipped
 
 ## 🔐 Test User Credentials
 
@@ -90,38 +90,6 @@ The Sauce Demo application provides special test users for different scenarios:
 | `problem_user` | `secret_sauce` | UI glitches and issues |
 | `performance_glitch_user` | `secret_sauce` | Slow loading times |
 
-## 🚀 Getting Started
-
-### Prerequisites
-- Python 3.7+
-- openpyxl library
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/himawari19/Sauce_Demo_Test_Cases.git
-cd Sauce_Demo_Test_Cases
-```
-
-2. Install dependencies:
-```bash
-pip install openpyxl
-```
-
-### Generating Test Cases Excel File
-
-Run the Python script to generate the Excel file:
-
-```bash
-python generate_test_cases.py
-```
-
-This will create a new Excel file with the current timestamp:
-```
-Sauce_Demo_Test_Cases_YYYYMMDD_HHMMSS.xlsx
-```
-
 ## 📊 Excel File Features
 
 The generated Excel file includes:
@@ -133,43 +101,10 @@ The generated Excel file includes:
 - **Checkout Tests Sheet:** Checkout and purchase flow tests
 
 ### Formatting
-- Color-coded status (Green = Active, Red = Skipped)
+- Color-coded status (Green = Passed, Yellow = Skipped, Red = failed)
 - Frozen header rows for easy scrolling
 - Optimized column widths for readability
 - Professional styling with borders and fills
-
-## 🎯 Test Execution
-
-These test cases can be used with various automation frameworks:
-
-### Playwright
-```bash
-npx playwright test
-```
-
-### Selenium
-```bash
-pytest tests/
-```
-
-### Cypress
-```bash
-npx cypress run
-```
-
-## 📝 Test Case Naming Convention
-
-- **TC_[MODULE]_[NUMBER]**
-  - TC = Test Case
-  - MODULE = Login, Product, Cart, Checkout
-  - NUMBER = Sequential number (001, 002, etc.)
-
-Example: `TC_LOGIN_001`, `TC_PRODUCT_005`, `TC_CHECKOUT_007`
-
-## 🔄 Test Status
-
-- **Active:** Test case is currently being executed and maintained
-- **Skipped:** Test case is temporarily skipped (usually for sorting tests)
 
 ## 📈 Test Statistics
 
@@ -181,36 +116,6 @@ Example: `TC_LOGIN_001`, `TC_PRODUCT_005`, `TC_CHECKOUT_007`
 | Checkout | 9 | 9 | 0 |
 | **TOTAL** | **37** | **35** | **2** |
 
-## 🛠️ Customization
-
-To add or modify test cases, edit the `test_cases` dictionary in `generate_test_cases.py`:
-
-```python
-test_cases = {
-    "Module Name": [
-        {
-            "id": "TC_MODULE_001",
-            "name": "Test Name",
-            "description": "Test description",
-            "precondition": "Precondition",
-            "steps": "Step 1\nStep 2\nStep 3",
-            "expected_result": "Expected outcome",
-            "priority": "High",
-            "status": "Active",
-            "module": "Module Name"
-        }
-    ]
-}
-```
-
-Then regenerate the Excel file by running the script again.
-
-## 📚 Resources
-
-- [Sauce Demo Application](https://www.saucedemo.com/)
-- [Playwright Documentation](https://playwright.dev/)
-- [Selenium Documentation](https://www.selenium.dev/)
-- [Cypress Documentation](https://docs.cypress.io/)
 
 ## 📄 License
 
@@ -225,12 +130,6 @@ Created for QA testing and automation practice.
 Contributions are welcome! Feel free to:
 - Add new test cases
 - Improve existing test cases
-- Report issues
-- Suggest enhancements
-
-## 📞 Support
-
-For questions or issues, please open an issue on GitHub.
 
 ---
 
