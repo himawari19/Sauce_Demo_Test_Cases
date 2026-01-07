@@ -63,8 +63,7 @@ This project provides a complete set of test cases for the Sauce Demo applicatio
 ```
 Sauce_Demo_Test_Cases/
 ├── README.md                                    # This file
-├── Sauce_Demo_Test_Cases_YYYYMMDD_HHMMSS.xlsx  # Generated test cases Excel file
-└── generate_test_cases.py                       # Python script to generate Excel file
+└── Sauce_Demo_Test_Cases_YYYYMMDD_HHMMSS.xlsx  # Test cases Excel file
 ```
 
 ## 📄 Test Case Format
@@ -101,20 +100,20 @@ The generated Excel file includes:
 - **Checkout Tests Sheet:** Checkout and purchase flow tests
 
 ### Formatting
-- Color-coded status (Green = Passed, Yellow = Skipped, Red = failed)
+- Color-coded status (Green = Passed, Yellow = Skipped, Red = Failed)
 - Frozen header rows for easy scrolling
 - Optimized column widths for readability
 - Professional styling with borders and fills
 
 ## 📈 Test Statistics
 
-| Module | Total | Active | Skipped |
-|--------|-------|--------|---------|
-| Login | 8 | 8 | 0 |
-| Product | 11 | 9 | 2 |
-| Cart | 9 | 9 | 0 |
-| Checkout | 9 | 9 | 0 |
-| **TOTAL** | **37** | **35** | **2** |
+| Module | Total Tests | Passed | Failed | Skipped |
+|--------|-------------|--------|--------|---------|
+| Login Tests | 8 | 8 | 0 | 0 |
+| Product Tests | 11 | 7 | 0 | 4 |
+| Cart Tests | 9 | 9 | 0 | 0 |
+| Checkout Tests | 9 | 9 | 0 | 0 |
+| **TOTAL** | **37** | **33** | **0** | **4** |
 
 
 ## 📄 License
